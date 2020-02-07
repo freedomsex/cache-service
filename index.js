@@ -4,9 +4,19 @@ import lscache from 'lscache';
 export default class Cache {
   constructor(config) {
     this.service = lscache;
-    this.default = {
-      expires: config.expires || 86400 * 30 * 3,
-    };
+    this.default = {};
+    let expires = 86400 * 30 * 3;
+    if (config && config.expires) {
+      expires = config.expires;
+    }
+    this.expires(expires);
+  }
+
+  expires(value) {
+    if (value) {
+      this.default.expires = value; 
+    }
+    return this.default.expires;
   }
 
   saveCache(key, value, expire) {

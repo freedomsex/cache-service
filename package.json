@@ -1,6 +1,6 @@
 {
   "name": "@freedomsex/cache-service",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "lscache service wrapper",
   "main": "index.js",
   "module": "index.js",
