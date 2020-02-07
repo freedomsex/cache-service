@@ -1,0 +1,30 @@
+{
+  "name": "@freedomsex/cache-service",
+  "version": "0.0.2",
+  "description": "lscache service wrapper",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freedomsex/cache-service.git"
+  },
+  "keywords": [
+    "lscache",
+    "wrapper",
+    "cache"
+  ],
+  "author": "tebaly",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/freedomsex/cache-service/issues"
+  },
+  "homepage": "https://github.com/freedomsex/cache-service#readme",
+  "dependencies": {
+    "lscache": "^1.3.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {}
+}
