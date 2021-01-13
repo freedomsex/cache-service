@@ -24,7 +24,11 @@ export default class Cache {
   }
 
   loadCache(key, defaults) {
-    return lscache.get(key) || defaults;
+    let value = lscache.get(key);
+    if (value === null && defaults !== undefined) {
+      value = defaults;
+    }
+    return value;
   }
 
   load(key, defaults) {
