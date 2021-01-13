@@ -24,7 +24,7 @@ export default class Cache {
   }
 
   loadCache(key, defaults) {
-    return lscache.get(key) || defaults || null;
+    return lscache.get(key) || defaults;
   }
 
   load(key, defaults) {
